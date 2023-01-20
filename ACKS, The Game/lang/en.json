@@ -1,0 +1,576 @@
+{
+    "ACKS":{
+        "ability_scores":{
+            "str": {
+                "short": "STR",
+                "long": "STRENGTH"
+            },
+            "int": {
+                "short": "INT",
+                "long": "INTELLIGENCE"
+            },
+            "wis": {
+                "short": "WIS",
+                "long": "WISDOM"
+            },
+            "dex": {
+                "short": "DEX",
+                "long": "DEXTERITY"
+            },
+            "con": {
+                "short": "CON",
+                "long": "CONSTITUTION"
+            },
+            "cha": {
+                "short": "CHA",
+                "long": "CHARISMA"
+            }
+        },
+        "alignments": {
+            "neutral": {
+                "name":"Neutral",
+                "description":"Neutral beings generally enjoy the benefits of law and civilization, but it is not something they directly fight for. They tend to focus on their own ends, whether those are family, fame, fortune, pleasure, or power. A Neutral mercenary might be found fighting on behalf of Law or Chaos; a Neutral farmer tends his crops and pays his taxes, whether to the Patriarch or the Lich-King."
+            },
+            "chaotic": {
+                "name":"Chaotic",
+                "description":"Chaotic beings actively seek to destroy civil society. Chaotic characters are often madmen or cultists of forgotten, chthonic gods. To the extent they have any order at all, societies of Chaotic characters are ruled by force and fear, and are often characterized by all manner of corruption and vice. Even decadent Lawful civilizations at least pay homage to civilizing virtue, but chaotic civilizations embrace their corruption."
+            },
+            "lawful": {
+                "name":"Lawful",
+                "description":"Lawful beings believe that civilization is worth fighting for. Despite its vices and villainies, civilization must be defended against those who would destroy it. Lawful beings tend to see wars among civilizations as aiding the cause of Chaos, and so they seek peace among Lawful civilizations where possible. However, Lawful characters are not pacifists, nor are they necessarily altruists. Indeed, most would think something was wrong with a hero who turned down fame and fortune; chests of gold, magnificent weapons, comely consorts, and grants of land are, after all, the rightful rewards for great deeds of valor on behalf of Law."
+            }
+        },
+        "currency": {
+            "cp": {
+                "short": "cp",
+                "long": "copper pieces"
+            },
+            "sp": {
+                "short": "sp",
+                "long": "silver pieces"
+            },
+            "gp": {
+                "short": "gp",
+                "long": "gold pieces" 
+            },
+            "ep": {
+                "short": "ep",
+                "long": "electrum pieces" 
+            },
+            "pp": {
+                "short": "pp",
+                "long": "platinum pieces" 
+            }
+        }, 
+        "geography": {
+            "mountain": "Mountian",
+            "island": "Island",
+            "peninsula": "Peninsula",
+            "riverbank": "Riverbank"
+        },
+        "heroic_forays": {
+            "entering_foray": "Entering the foray...",
+            "leading_front": "Leading from the front...",
+            "heroic_charge": "Heroically charging into battle...",
+            "attacking_vanguard": "Attacking in front of the vanguard...",
+            "cutting_swath": "Cutting a swath of glory...",
+            "carving_epics": "Carving his name into the epics...",
+            "seeking_death": "Seeking glorious death..."
+
+        },
+        "items": {
+            "arbalest": {
+                "name": "arbalest",
+                "description": "An arbalest is a heavy crossbow, pulled with mechanical assistance of a rack and pinion or windlass."
+            },
+            "axe_battle": {
+                "name": "battle axe",
+                "description":"This is a single- or double-bitted axe with a 2' to 4' haft, designed for battle and useable with one or two hands."
+            },
+            "axe_great": {
+                "name": "great axe",
+                "description":"This is a double-bitted axe or long-shafted single-bitted axe, with a 4' or longer haft, requiring two hands to use."
+            },
+            "axe_hand": {
+                "name": "hand axe",
+                "description":"This is a single-bitted axe, with a 1' to 2' haft, balanced for throwing."
+            },
+            "backpack": {
+                "name": "backpack",
+                "description": "A backpack has two straps and can be worn on the back, keeping the hands free. It holds up to 4 stone (40lb)."
+            },
+            "ballista": {
+                "name": "ballista",
+                "description": "A siege weapon, powered either by composite bow or torsion spring mechanisms, which hurls large bolts."
+            },
+            "barding": {
+                "name": "barding",
+                "description": "Barding is horse armor made from a variety of materials."
+            },
+            "banded_plate_armor": {
+                "name": "banded plate armor",
+                "description": "Banded plate armor is made of overlapping horizontal strips of laminated metal sewn over leather. It is comparable in protection to lamellar armor, and superior to chain mail. Banded plate is commonly worn as a cuirass with shoulder protection, with reinforced leather protecting the arms and legs."
+            },
+            "barrel": {
+                "name": "barrel",
+                "description": "A cylindrical container constructed from wooden planks and metal rings."
+            },
+            "belladonna": {
+                "name": "belladonna",
+                "description": "Belladonna, also known as deadly nightshade, is a poisonous flower, A character who eats a pound of belladonna within one hour of being infected with lycanthropy may make a saving throw versus Poison to shake off the affliction. If the character fails the saving throw, however, he dies from poison after one turn. Even if the poison is then neutralized or the character is then raised from the dead, he will still be afflicted with lycanthropy, and further doses of belladonna will be of no use."
+            },
+            "blanket": {
+                "name": "blanket",
+                "description": "A large piece of woolen or similar material used as a bed covering or other covering for warmth."
+            },
+            "birthwort": {
+                "name": "birthwort",
+                "description": "Birthwort, also known as snakeroot, is a healing herb used as a remedy for snake bites and other poisons. Birthwrt can be applied as a poultice to a poisoned wound by an adventurer with the Healing proficiency. Used in this manner, it provides a +2 bonus on the Healing proficiency throw to neutralize poison."
+            },
+            "candle": {
+                "name": "candle",
+                "description": "A candle dimly illuminates a 5' radius and burns for 1 hour. Wax candles burn cleanly, but tallow candles produce a foul smelling smoke. Adventurers carrying tallow candles will never surprise creatures with keen olfactory senses.",
+                "type": {
+                    "tallow": "candle (tallow)",
+                    "wax": "candle (wax)"
+                }
+            },
+            "chest": {
+                "name": "chest",
+                "description": ""
+            },
+            "comfrey": {
+                "name": "comfrey",
+                "description": ""
+            },
+            "crowbar": {
+                "name": "crowbar",
+                "description": ""
+            },
+            "flask_oil": {
+                "name": "flask of oil",
+                "description": "",
+                "type":{
+                    "military": "flask of oil (military)",
+                    "common": "flask of oil (common)"
+                }
+            },
+            "garlic": {
+                "name": "garlic",
+                "description": ""
+            },
+            "goldenrod": {
+                "name": "goldenrod",
+                "description": ""
+            },
+            "grappling_hook": {
+                "name": "grappling hook",
+                "description": ""
+            },
+            "hammer": {
+                "name": "hammer",
+                "description": ""
+            },
+            "holy_symbol": {
+                "name": "holy symbol",
+                "description": ""
+            },
+            "holy_water": {
+                "name": "holy water",
+                "description": ""
+            },
+            "ink": {
+                "name": "ink",
+                "description": ""
+            },
+            "iron_spikes": {
+                "name": "iron spikes",
+                "description": ""
+            },
+            "lantern": {
+                "name": "lantern",
+                "description": ""
+            },
+            "lock": {
+                "name": "lock",
+                "description": ""
+            },
+            "mirror": {
+                "name": "mirror",
+                "description": ""
+            },
+            "musical_instrument": {
+                "name": "musical instrument",
+                "description": "",
+                "type": {
+                    "lyre": "lyre"
+                }
+            },
+            "pouch": {
+                "name": "pouch",
+                "description": ""
+            },
+            "purse": {
+                "name": "purse",
+                "description": ""
+            },
+            "pole_wooden": {
+                "name": "pole_wooden",
+                "description": ""
+            },
+            "rations": {
+                "name": "rations",
+                "description": "",
+                "type": {
+                    "iron" : "rations, iron",
+                    "standard": "rations, standard"
+                }
+            },
+            "rope": {
+                "name": "rope",
+                "description": ""
+            },
+            "sack": {
+                "name": "sack",
+                "description": "",
+                "type": {
+                    "small": "sack (small)",
+                    "large": "sack (large)"
+                }
+            },
+            "spellbook_blank": {
+                "name": "spellbook (blank)",
+                "description": ""
+            },
+            "stakes_mallet": {
+                "name": "stakes and mallet",
+                "description": ""
+            },
+            "tent": {
+                "name": "tent",
+                "description": ""
+            },
+            "thieves_tools": {
+                "name": "thieve's tools",
+                "description": ""
+            },
+            "tinder_box": {
+                "name": "tinder box (flint and steel)",
+                "description": ""
+            },
+            "torches": {
+                "name": "torches",
+                "description": ""
+            },
+            "water_skin": {
+                "name": "water skin",
+                "description": ""
+            },
+            "wine_skin": {
+                "name": "wine skin",
+                "description": ""
+            },
+            "wolfsbane": {
+                "name": "woflsbane",
+                "description": ""
+            },
+            "woundwart": {
+                "name": "woundwart",
+                "description": ""
+            }
+            
+        },
+        "market_class": {
+            "I": "I",
+            "II": "II",
+            "III": "III",
+            "IV": "IV",
+            "V": "V",
+            "VI": "VI"
+        },
+        "monster_types" : {
+            "animal": "Animal",
+            "domestic_animal": "Domestic Animal",
+            "wild_animal": "Wild Animal",
+            "dire_animal": "Dire Animal", 
+            "giant_animal": "Giant Animal",
+            "prehistoric_animal": "Prehistoric Animal",
+            "fantastic_creature": "Fantastic Creature",
+            "vermin": "Vermin",
+            "flyer": "Flyer",
+            "humanoid": "Humanoid",
+            "insect" : "Insect",
+            "men" : "Men",
+            "swimmer" : "Swimmer",
+            "undead" : "Undead",
+            "unusual" : "Unusual",
+            "special_animal": "Special Animal",
+            "dragon": "Dragon"
+        },
+        "monster_role": {
+            "drover": {
+                "name": "Drover",
+                "description": "Drovers are trained to bring livestock together into a herd and move the herd from place to place. A proficient character (e.g., one with the appropriate Animal Training proficiency) can safely control up to six droving creatures, and an unproficient character can control only one. Drover training is exceptionally demanding, and counts as seven tricks."
+            },
+            "guard": {
+                "name": "Guard",
+                "description": "Guards are trained to attack designated targets and defend designated characters or locations. Guards will accompany their handlers when requested, but loyally stay in place when their handlers are not present. A proficient character can safely control up to 20 guard creatures. An unproficient character can safely control up to 6 guard creatures, if an animal trainer has taught him the appropriate commands. Guard training increases a creature's morale score (ML) by 2, to a maximum of +2, but it is highly demanding, equivalent to learning seven tricks from an animal trainer. Many creatures lack the intelligence or temperament to be guards - these are usually trained as hunters instead. (Some races have an affinity with certain creatures, and can train them as guards more easily. See p. 123 for more details.)."
+            },
+            "hunter": {
+                "name": "Hunter",
+                "description": "Hunters are trained to accompany their handlers on hunts, where they will track and kill designated targets. Unlike guard creatures, hunters require constant monitoring and discipline to ensure they stay under control. Therefore, a proficient character can safely control only six hunter creatures, and an unproficient character can control only one. Hunter training counts as learning only two tricks, so most animals of a carnivorous nature can be trained as hunters even if they are not suitable as guards."
+            },
+            "livestock": {
+                "name": "Livestock",
+                "description": "Livestock is trained to be easily herded by a shepherd, sheepdog, or similar. A proficient character or drover animal can safely control any number of livestock, provided they are part of the same social group (pack, herd, etc.). An unproficient character can safely control only one livestock. Livestock will not accept riders, pull loads, or carry burdens, and in battle or other stressful situations will tend to react according to their natural instincts (fleeing if a prey animal, or attacking if a predator). Domesticated herd animals can serve as livestock without taming or training. Otherwise, livestock training counts as learning one trick."
+            },
+            "mount": {
+                "name": "Mount",
+                "description": "Mounts are trained to carry a rider on their back and accept his directions. Mounts will not wear barding, and will not charge into melee unless facing natural predators. They will not attack with their natural weapons while carrying a rider. A proficient character (one with Adventuring, Animal Training, Beast Friendship, or Riding proficiency) can safely control a ridden mount outside of battle. If the character has Riding proficiency, he can control a ridden mount in battle; and outside of battle, he can control up to six mounts, one ridden and the others ponied on lead ropes. An unproficient character can safely control a mount on a lead rope, but cannot ride one without grave risk to himself (save versus Paralysis each round or fall off). Mount training counts as five tricks, so when dealing with less-intelligent beasts, suitable specimens might be rare and expensive. Note that even sapient creatures which are to carry riders must be trained as mounts, because the subtleties of communication between rider and mount, and of movement while laden with a rider, do not come naturally."
+            },
+            "war mount": {
+                "name": "War Mount",
+                "description": "War mounts are trained to carry a rider into battle and accept his directions despite the chaos around it. War mounts will wear barding, and will charge into melee, even if not naturally willing to do so. In melee, war mounts will attack their masters' targets using their natural weapons. War mounts are subject to the same limits on control as mounts (see above). As with guard training, war mount training increases a creature's morale score by 2, to a maximum of +2, and war mounts without riders can function as guard creatures. Training as a war mount is even more demanding than guard or mount training, counting as eight tricks. Very few animals have the intelligence and temperament to serve as war mounts, so they tend to be very expensive. Sapient creatures which are to carry troops into battle must receive war mount training. Unlike creatures of animal intelligence, their morale score is not increased by war mount training, however."
+            },
+            "workbeast": {
+                "name": "Workbeast",
+                "description": "Workbeasts are trained to pull heavy loads or carry burdens. Workbeasts are not trained to accept a rider, and in battle or other stressful situations will tend to react according to their natural instincts (fleeing if a prey animal, or attacking if a predator). Teaching an animal to be a workbeast counts as two tricks. A proficient character can safely control six workbeasts, and an unproficient character can control only one."
+            }
+        },
+        "monster_sizes": {
+            "diminutive": "diminutive",
+            "mansized": "man_sized",
+            "large": "large",
+            "huge": "huge",
+            "gigantic": "gigantic",
+            "colossal": "colossal"
+        },
+        "monster_trick" : {
+            "attack": {
+                "name":"Attack",
+                "description":"The creature attacks apparent enemies. Its handler may point to a particular creature that he wishes the creature to attack, and it will comply if able."
+            },
+            "carry": {
+                "name":"Carry",
+                "description":"The creature allows its handler to ride on its back."
+            },
+            "come": {
+                "name":"Come",
+                "description":"The creature comes to its handler, even if it normally would not do so."
+            },
+            "defend": {
+                "name":"Defend",
+                "description":"The creature defends its handler (or is ready to defend its master if no threat is present), even without any command being given. Alternatively, its master can command the creature to defend a specific other character."
+            },
+            "down": {
+                "name":"Down",
+                "description":"The creature breaks off from combat or otherwise backs down. A creature that doesn't know this trick continues to fight until it must flee (due to injury, a fear effect, or the like) or its opponent is defeated."
+            },
+            "fetch": {
+                "name":"Fetch",
+                "description":"The creature goes and gets something. If its handler does not point out a specific item, the creature fetches some random object."
+            },
+            "guard": {
+                "name":"Guard",
+                "description":"The creature stays in place and prevents others from approaching."
+            },
+            "heel": {
+                "name":"Heel",
+                "description":"The creature follows its handler closely, even to places where it normally wouldn't go."
+            },
+            "perform": {
+                "name":"Perform",
+                "description":"The creature performs a variety of simple tricks, such as sitting up, rolling over, roaring or barking, and so on."
+            },
+            "seek": {
+                "name":"Seek",
+                "description":"The creature moves into an area and looks around for anything that is obviously alive or animate."
+            },
+            "stay": {
+                "name":"Stay",
+                "description":"The creature stays in place, waiting for its handler to return. It does not challenge other creatures that come by, though it still defends itself if it needs to."
+            },
+            "track": {
+                "name":"Track",
+                "description":"The creature tracks the scent presented to it."
+            },
+            "work": {
+                "name":"Work",
+                "description":"The creature carries, pulls, or pushes more than its normal load."
+            }
+        },
+        "morale": {
+            "unit":{
+                "rout": {
+                    "name": "Rout",
+                    "description": "The unit immediately routs off the battlefield. It will play no futher part in the battle, and counts as destroyed for morale purposes."
+                },
+                "flee": {
+                    "name": "Flee",
+                    "description": "The unit retreats in disorder, changing its facing towards its own battlemap edge and immediately retreats a number of hexes equal to its hustling movement rate in that direction. It may not attack next battle turn. If the battle ends before the unit can attack again, it counts as routed. If a fleeing unit cannot complete its retreat, it is considered routed and removed from play."
+                },
+                "waver": {
+                    "name": "Waver",
+                    "description": "The unit's morale is wavering. If already disordered, it retreats one he towards its own hattlemap edge. Its battle rating (BR) is halved when attacking, next battle turn. If the unit cannot complete its retreat, it flees, instead. "
+                },
+                "stand_firm": {
+                    "name": "Stand Firm",
+                    "description": "The unit remains steady. No effect."
+                },
+                "rally": {
+                    "name": "Rally",
+                    "description": "The unit rallies under the pressure of battle. If the unit is disordered, the disordered token is removed. If the unit is not disordered, it recovers one lost uhp and, if unthreatened, may advance one hex towards an enemy unit. Its battle rating (BR) is increased by half when attacking, next battle turn"
+                }
+            }
+        },
+        "reaction": {
+            "irrefusable_offer": {
+                "betrayal": {
+                    "name": "Betrayal",
+                    "description": "Betray means that the monster will pretend to accept the offer in order to betray the adventurer when the opportunity presents itself. The monster secretly hates and loathes its “employer” and will actively work against the adventurer's interest."
+                },
+                "escape": {
+                    "name": "Escape",
+                    "description": "Escape means that the monster will pretend to accept the offer in order to save its own life. It will desert from the adventurer's service if an opportunity to safely do so presents itself. The monster might attempt to harm the adventurer during the course of its desertion if able to do so, but escape rather than betrayal will be its objective."
+                },
+                "hesitate": {
+                    "name": "Hesitate",
+                    "description": "Hesitate means that the monster will accept the offer, but it feels uncertain loyalties. It begins its service with a morale score of -2 instead of 0."
+                },
+                "accept": {
+                    "name": "Accept",
+                    "description": "Accept means that the monster becomes loyal to the character, with a morale score of 0."
+                },
+                "accept_with_elan": {
+                    "name": "Accept with élan",
+                    "description": "Accept with élan means the offer is accepted with very good spirit, and the henchmen's morale score begins at +1."
+                }                
+            }
+        },
+        "terrain_types": {
+            "badlands": "Badlands",
+            "barren": "Barren",
+            "clear": "Clear",
+            "broken_ground": "Broken Ground",
+            "mud": "Mud",
+            "scrub": "Scrub",
+            "woods": "Woods",
+            "swamp": "Swamp",
+            "grass": "Grass",
+            "hills": "Hills",
+            "desert": "Desert",
+            "plains": "Plains",
+            "fields_fallow": "Fields, Fallow",
+            "fields_ripe": "Fields, Ripe",
+            "fields_wild": "Fields, Wild",
+            "forest_heavy": "Forest, Heavy",
+            "forest_light": "Forest, Light",
+            "jungle": "Jungle",
+            "marsh": "Marsh",
+            "mountains": "Mountains",
+            "waterfall": "Waterfall",
+            "stream" : "Stream",
+            "river": "River",
+            "spring": "Spring",
+            "pond": "Pond",
+            "lake": "Lake",
+            "brooks": "Brooks",
+            "impenetrable_forest": "Impenetrable Forest",
+            "trench": "Trench",
+            "earthen_rampart": "Earthen Rampart",
+            "ditch": "Ditch",
+            "moat": "Moat",
+            "wall": "Walls"
+        },
+        "troop_type": {
+            "conscript": "Conscript",
+            "militia" : "Militia",
+            "light_infantry" : "Light Infantry",
+            "slinger": "Slinger",
+            "heavy_infantry": "Heavy Infantry",
+            "crossbowman": "Crossbowman",
+            "mounted_crossbowman": "Mounted Crossbowman",
+            "bowman": "Bowman",
+            "longbowman": "Longbowman",
+            "light_cavalry": "Light Cavalry",
+            "horse_archer": "Mounted Archer",
+            "medium_cavalry": "Medium Cavalry",
+            "heavy_cavalry": "Heavy Cavalry",
+            "cataphract_cavalry" : "Cataphract Cavalry",
+            "wolf_rider": "Wolf Rider"
+        },        
+        "strategic_situations": {
+            "pitched_battle": {
+                "name": "Pitched Battle",
+                "description": "A pitched battle occurs when the two armies meet on a mutually agreed battlefield, fully deployed. Every diviion from each army may participate in the battle."
+            },
+            "meeting_engagement": {
+                "name": "Meeting Engagement",
+                "description": "A meeting engagement pits the vanguard divisions of one army against the vanguard divisions of the other army."
+            },
+            "rear_guard_action": {
+                "name": "Rear Guard Action",
+                "description": "A rear guard action pits every division of an offensive army against the rear guard divisions of an evading army."
+            },
+            "skirmish": {
+                "name": "Skirmish",
+                "description": "A skirmish pitsthe vanguard divisions of an offensive army agains the rear guard divisions of an evading army."
+            },
+            "ambush": {
+                "name": "Ambush",
+                "description": "An ambush occurs when an unaware army on the march is surprised by a fully deployed and ready army. Every division from each army participates in battle."
+            },
+            "envelopment": {
+                "name": "Envelopment",
+                "description": "An envelopment occurs when an army deployed for defense is surprised by an attack by an offensive army on its front and flank. Every division from each army participates in the battle."
+            },
+            "deep_envelopment": {
+                "name": "Deep Envelopment",
+                "description": "A deep envelopment occurs when an offensive army is surprised by an attack by an opposing army on its front and rear. Every division from each army participates in the battle."
+            },
+            "rear_guard_envelopment": {
+                "name": "Rear Guard Envelopment",
+                "description": "A rear guard envelopment occurs when an army's rear guard divisions, deployed to cover an evasion, are surprised by an attack by an opposing army on its front and flank."
+            }
+        },
+        "specialist_types": {
+
+        }, 
+         
+        "Settings" : {
+            "Heroic_Breakfast_Memorial_Rule.Name" : "HFH: Heroic Breakfast Memorial Rule",
+            "Heroic_Breakfast_Memorial_Rule.Hint" : "Once per day a character can recover his BHR in hp by consuming a meal accompanies by alcohol, coffee, or tea. This recovery is in addition to any hit points gained from complete rest. Halfing characters may consume a second breakfast for an additional recovery of hp.",
+            
+            "Heroic_Survival.Name" : "HFH: Heroic Survival",
+            "Heroic_Survival.Hint" : "In heroic fantasy campaigns, heroes are considerably more likely to survive mortal wounds than ordinary men. Adventurers with d6 HD add +2 to their 1d20 roll on the Mortal Wounds table. Adventurers with d8 HD add +4, adventurers with d10 HD add +6, and adventurers with d12 HD add +8.",
+
+            "Khal_Drogo_Memorial_Rule.Name": "HFH: Khal Drogo Memorial Rule",
+            "Khal_Drogo_Memorial_Rule.Hint": "In worlds where wounds can fester and grow foul there is no assurance that an injured hero will recover. Each day that a character rests while recovering from imcapacitation, he must make a saving throw versus Death. Apply the character's CON modifier. If successful, the day counts towards his period of bed rest. If the save fails by 5 or more, or with a natural 1, the period of best rest required increases by one day. If the remaining period of bed rest required ever reaches more than 45 days, the character dies of sepsis. This optional rule does not apply to magical healing.",
+            
+            "Temporary_Hit_Points.Name": "HFH: Temporary Hit Points",
+            "Temporary_Hit_Points.Hint": "Characters with temporary hit points who take damage lose the temporary hit points first, with any leftoever damage carrying over to their normal hit points. A character can be at full hit points and receive temporary hit points. Healing can't restore temporary hit points and they can't be added together. If a character has 0 or fewer hit points receiving temporary hit points does not count as healing.",
+
+            "Type_Of_Characters.Name" : "HFH: Type of Characters",
+            "Type_Of_Characters.Hint" : "Determines the method by which ability scores are generated. Normal: roll 3d6 for each ability score, tally dice, record that result; Heroic: roll 4d6 for each ability score, drop the lowest die, tally dice, record that result; Legendary: roll 5d6 for each ability score, drop the 2 lowest die, tally dice, record that result.",
+            "Type_Of_Characters.Normal" : "Normal",
+            "Type_Of_Characters.Heroic" : "Heroic",
+            "Type_Of_Characters.Legendary" : "Legendary",
+
+            "Proportional_Healing.Name" : "HFH: Proportional Healing",
+            "Proportional_Healing.Hint" : "Adds base healing rate (BHR) to game; Instead of healing for values calculated by static die rolls (e.g. 1d6 + 1), healing is calculated using each character's base healing rate (BHR; which is determined by max hp)",
+
+            "Ability_Scores_For_Monsters.Name" : "L&E: Ability Scores for Monsters",
+            "Ability_Scores_For_Monsters.Hint" : "Ability Scores for Monsters",
+            
+            "Tims_in_Trouble_Memorial_Rule.Name": "L&E: 'Tim's in Trouble' Memorial Rule",
+            "Tims_in_Trouble_Memorial_Rule.Hint": "If a creature of animal intelligence has a combined INT modifier plus trainability modifier of 5 or more, it may (at the Judge’s discretion) be considered semi-sapient and capable of learning primitive communication, simple math, and basic tool use.",
+            
+            "Reinforcements.Name" : "D@W: Reinforcements",
+            "Reinforcements.Hint" : "This optional rule allows for the slow arrival of units from distant divisions onto the battlemap."
+        },
+        "Errors": {
+            "Unrecognized_Input": "Your input was not amongst the localized, enumerated strings. Please check your input and try again. If the problem persists, inform developer of possible error in code",
+            "Invalid_Input": "Your input was not of the expected type. Please read JSDOC, check your input, and try again. If the problem persists, inform developer of possible error in code"
+        }
+    }
+}
