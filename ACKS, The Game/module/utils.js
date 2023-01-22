@@ -1,3 +1,6 @@
+import { ACKS } from "../acks";
+
+
 /**
  * Generate a random string ID of a given requested length.
  * @param {number} length    The length of the random ID to generate
@@ -47,7 +50,7 @@ function timeSince(timeStamp) {
 function extractHitDiceInfo(roll_term) {
     let die_type;
     // Identify the die type
-    Object.values(ClassData.DIE_TYPES).forEach(e => {
+    Object.values(ACKS.DIE_TYPES).forEach(e => {
         if(roll_term.includes(e)){
             die_type = e;
         }

@@ -1,10 +1,5 @@
-import {
-    utils
-} from "../utils";
-
-import {
-    ACKS,
-} from "../../acks";
+import { utils } from "../utils";
+import { ACKS } from "../../acks";
 
 
 
@@ -197,19 +192,16 @@ class CreatureData {
         };
     }
 
+    static defineSchema() {
+        return {
 
-    _levelUp(){
-        if(this.xp.current < this.xp.next) return;
-        let excess_xp = this.xp.current - this.xp.next;
-        this.level += 1;
-        this.xp.current = excess_xp;
-        this.xp.next = this._getExperienceForLevel(this.level + 1);
+        }
     }
 }
 /* ------------------------------------ */
 /* Character Data                       */
 /* ------------------------------------ */
-class CharacterData extends CreatureData {
+class CharacterData {
     
     constructor(data = {
         name: "New Character"
@@ -229,7 +221,7 @@ class CharacterData extends CreatureData {
 /* ------------------------------------ */
 /* Monster Data                         */
 /* ------------------------------------ */
-class MonsterData extends CreatureData {
+class MonsterData {
     
     constructor(data = {
         name: "New Monster"
@@ -432,19 +424,6 @@ class ClassData {
 /* ------------------------------------ */
 /* Static                               */
 /* ------------------------------------ */
-    static get DIE_TYPES(){
-        return {
-        d2: "d2",
-        d3: "d3",
-        d4: "d4",
-        d6: "d6",
-        d8: "d8",
-        d10: "d10",
-        d12: "d12",
-        d20: "d20",
-        d100: "d100",            
-        } 
-    }
     /**
      * #ofskillstraded_leveltraded (eg. one1)
      */
@@ -666,8 +645,8 @@ class ClassData {
 /* ------------------------------------ */
     constructor(data = {
             name: "New Class",
-            prime_requisite: new Array(), 
-            requirements: new Array(), 
+            prime_requisite: [""], 
+            requirements: [""], 
             maximum_level: 14,
             levelProgression:[{}], 
             attackProgression: ClassData.ATTACK_THROW_PROGRESSIONS.fighter, 
@@ -714,7 +693,7 @@ class ClassData {
             divineValueTradeOffs: {
                 trade_turnUndead: false,
             },
-            spellList: new Array()
+            spellList: [""]
     }) {
         this.data = data;
         this.name = this.data.name;
@@ -762,33 +741,33 @@ class ClassData {
 /* Initialization                       */
 /* ------------------------------------ */
     _init(){
-        this._loadLevelProgression;
-        this._loadAttackProgression;
-        this._loadSavingThrowProgression;
-        this._loadSpellProgression;
-        this._loadSpellList;        
+        this.#loadLevelProgression();
+        this.#loadAttackProgression();
+        this.#loadSavingThrowProgression();
+        this.#loadSpellProgression();
+        this.#loadSpellList();        
     }
-    _loadLevelProgression(){
+    #loadLevelProgression(){
         return this.data.levelProgression.forEach(e => {
             this.levelProgression.set(e?.level, e);
         });
     }
-    _loadAttackProgression(){
+    #loadAttackProgression(){
         return this.data.attackProgression.forEach(e => {
             this.attackProgression.set(e?.level, e);
         });
     }
-    _loadSavingThrowProgression(){
+    #loadSavingThrowProgression(){
         return this.data.savingThrowProgression.forEach(e => {
             this.savingThrowProgression.set(e?.level, e);
         });
     }
-    _loadSpellProgression(){
+    #loadSpellProgression(){
         return this.data?.spellProgression.forEach(e => {
             this.spellProgression.set(e?.level, e);
         });
     }  
-    _loadSpellList(){
+    #loadSpellList(){
         return this.data.spellList.forEach(e => {
             this.spellList.set(e, ACKS.spells.get(e))
         });
@@ -955,7 +934,7 @@ class RaceData {
     }
 }
 /* ------------------------------------ */
-/* Ability Data                            */
+/* Ability Data                         */
 /* ------------------------------------ */
 class AbilityData {
     constructor(data={
@@ -984,7 +963,6 @@ class ConditionData {
         this.data = data;
     }
 }
-
 /* ------------------------------------ */
 /* Repertoire Data                      */
 /* ------------------------------------ */
@@ -1015,7 +993,6 @@ class RepertoireData {
     }
 
 }
-
 /* ------------------------------------ */
 /* Spell Data                           */
 /* ------------------------------------ */
@@ -1040,7 +1017,6 @@ class SpellData {
     }
 
 }
-
 /* ------------------------------------ */
 /* Magick Data                          */
 /* ------------------------------------ */
@@ -1052,9 +1028,8 @@ class MagickData {
     }
 
 }
-
 /* ------------------------------------ */
-/* Party Data                          */
+/* Party Data                           */
 /* ------------------------------------ */
 class PartyData {
     constructor(data={
@@ -1064,9 +1039,8 @@ class PartyData {
     }
 
 }
-
 /* ------------------------------------ */
-/* Inventory Data                          */
+/* Inventory Data                       */
 /* ------------------------------------ */
 class InventoryData {
     constructor(data={
@@ -1076,9 +1050,8 @@ class InventoryData {
     }
 
 }
-
 /* ------------------------------------ */
-/* Lineage Data                          */
+/* Lineage Data                         */
 /* ------------------------------------ */
 class LineageData {
     constructor(data={
