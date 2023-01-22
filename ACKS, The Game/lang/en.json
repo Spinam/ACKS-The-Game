@@ -1,5 +1,12 @@
 {
     "ACKS":{
+        "age_category": {
+            "youth": "Youth",
+            "adult": "Adult",
+            "middle_aged": "Middle Aged",
+            "old": "Old",
+            "ancient": "Ancient"
+        },
         "ability_scores":{
             "str": {
                 "short": "STR",
@@ -40,6 +47,33 @@
                 "description":"Lawful beings believe that civilization is worth fighting for. Despite its vices and villainies, civilization must be defended against those who would destroy it. Lawful beings tend to see wars among civilizations as aiding the cause of Chaos, and so they seek peace among Lawful civilizations where possible. However, Lawful characters are not pacifists, nor are they necessarily altruists. Indeed, most would think something was wrong with a hero who turned down fame and fortune; chests of gold, magnificent weapons, comely consorts, and grants of land are, after all, the rightful rewards for great deeds of valor on behalf of Law."
             }
         },
+        "crime": {
+            "drunkenness": "Drunkenness",
+            "outrage": "Outrage",
+            "eavesdropping": "Eavesdropping",
+            "trespassing": "Trespassing",
+            "gambling": "Gambling",
+            "bribery": "Bribery",
+            "theft": "Theft",
+            "contraband": "Contraband",
+            "assault": "Assault",
+            "vandalism": "Vandalism",
+            "burglary": "Burglary",
+            "smuggling": "Smuggling",
+            "kidnapping": "Kidnapping",
+            "manslaughter": "Manslaughter",
+            "mayhem": "Mayhem",
+            "robbery": "Robbery",
+            "racketeering": "Racketeering",
+            "arson": "Arson",
+            "desertion": "Desertion",
+            "murder": "Murder",
+            "sedition": "Sedition",
+            "heresy": "Heresy",
+            "high_treason": "High Treason",
+            "regicide": "Regicide"
+
+        },
         "currency": {
             "cp": {
                 "short": "cp",
@@ -62,6 +96,28 @@
                 "long": "platinum pieces" 
             }
         }, 
+        "dungeon_types": {
+            "abandoned_mine": "Abandoned Mine",
+            "barrow_mound": "Barrow Mound",
+            "catacombs": "Catacombs",
+            "cliff_city": "Cliff City",
+            "crumbling_castle": "Crumbling Castle",
+            "giant_burrow": "Giant Burrow",
+            "giant_insect_hive": "Giant Insect Hive",
+            "humanoid_warren": "Humanoid Warren",
+            "maze": "Maze",
+            "monster_lair": "Monster Lair",
+            "natural_caverns": "Natural Caverns",
+            "prison": "Prison",
+            "ruined_manor": "Ruined Manor",
+            "sewers": "Sewers",
+            "sunken_city": "Sunken City",
+            "temple": "Temple",
+            "tomb": "Tomb",
+            "tower": "Tower",
+            "underground_river": "Underground River",
+            "wizards_dungeon": "Wizard's Dungeon"            
+        },
         "geography": {
             "mountain": "Mountian",
             "island": "Island",
@@ -78,7 +134,175 @@
             "seeking_death": "Seeking glorious death..."
 
         },
-        "items": {
+        "hijinks": {
+            "assassinating": "Assassinating",
+            "carousing": "Carousing",
+            "smuggling": "Smuggling",
+            "spying": "Spying",
+            "stealing": "Stealing",
+            "treasure_hunting": "Treasure Hunting"
+        },
+        "item": {
+            "gem": {
+                "agate": "agate",
+                "alexandrite": "alexandrite",
+                "amber": "amber",
+                "amber_with_preserved_extinct_creatures": "amber with preserved extinct createures",
+                "amethyst": "amethyst",
+                "aquamarine": "aquamarine",
+                "azurite": "azurite",
+                "baroque_pearl": "baroque pearl",
+                "black_pearl": "black pearl",
+                "black_sapphire": "black sapphire",
+                "bloodstone": "bloodstone",
+                "camelian": "camelian",
+                "chalcedony": "chalcedony",
+                "citrine": "citrine",
+                "coral": "coral",
+                "crystal": "crystal",
+                "crystal_geode": "crystal geode",
+                "diamond": "diamond",
+                "emerald": "emerald",
+                "facet_cut_imperial_topaz": "facet cut imperial topaz",
+                "facet_cut_star_ruby": "facet cut star ruby",
+                "facet_cut_star_sapphire": "facet cut star sapphire",                
+                "flawless_diamond": "flawless diamond",
+                "flawless_facet_cut_black_sapphire": "flawless facet cut black sapphire",
+                "flawless_facet_cut_blue_diamond": "flawless facet cut blue diamond",
+                "flawless_facet_cut_diamond": "flawless facet cut diamond",
+                "flawless_facet_cut_emerald": "flawless facet cut emerald",
+                "flawless_facet_cut_jacinth": "flawless facet cut jacinth",
+                "flawless_facet_cut_ruby": "flawless facet cut ruby",
+                "garnet": "garnet",
+                "hematite": "hematite",
+                "imperial_topaz": "imperial topaz",
+                "jacinth": "jacinth",
+                "jade": "jade",
+                "jasper": "jasper",
+                "jet": "jet",
+                "lapis_lazuli": "lapis lazuli",
+                "malachite": "malachite",
+                "moonstone": "moonstone",
+                "obsidian": "obsidian",
+                "onyx": "onyx",
+                "opal": "opal",
+                "pearl": "pearl",
+                "quartz": "quartz",
+                "ruby": "ruby",
+                "sardonyx": "sardonyx",
+                "spinel": "spinel",
+                "star_ruby": "star ruby",
+                "star_sapphire": "star sapphire",
+                "sunset amethyst": "sunset amethyst",
+                "tiger_eye": "tiger eye",
+                "topaz": "topaz",
+                "tourmaline": "tourmaline",
+                "turquoise": "turquoise",
+                "whorled_nephrite_jade": "whorled nephrite jade",
+                "zircon": "zircon",
+
+                "TYPES": {
+                    "ornamental": "ornamental",
+                    "gem": "gem",
+                    "brilliant": "brilliant"
+                }
+            },
+            "jewelry": {
+                "alabaster": "alabaster",
+                "beast_parts": "beast parts",
+                "bone": "bone",
+                "carved_jade": "carved jade",
+                "chryselephantine": "chryselephantine",
+                "fine_wood": "fine wood",
+                "glass": "glass",
+                "ivory": "ivory",
+                "porcelain": "porcelain",
+                "scrimshaw": "scrimshaw",
+                "shells": "shells",
+                "silver_studded_with_turquoise": "silver studded with turquoise",
+                "silver_studded_with_moonstone": "silver studded with moonstone",
+                "silver_studded_with_opal": "silver studded with opal",
+                "silver_studded_with_jet": "silver studded with jet",
+                "silver_studded_with_amber": "silver studded with amber",
+                "silver_studded_with_pearl": "silver studded with pearl",
+                "gold_studded_with_topaz": "gold studded with topaz",
+                "gold_studded_with_jacinth": "gold studded with jacinth",
+                "gold_studded_with_ruby": "gold studded with ruby",
+                "platinum_studded_with_diamond": "platinum studded with diamond",
+                "platinum_studded_with_sapphire": "platinum studded with sapphire",
+                "platinum_studded_with_emerald": "platinum studded with emerald",
+                "electrum_pendant_wth_pearls_and_star_rubies": "electrum pendant with pearls and star rubies",
+                "silver_pendant_wth_pearls_and_star_rubies": "silver pendant with pearls and star rubies",
+                "gold_with_diamonds_and_sapphires": "gold with diamonds and sapphires",
+                "platinum_with_diamonds_and_sapphires": "platinum with diamonds and sapphires",
+                "gold_encrusted_with_flawless_facet_cut_diamonds": "gold encrusted with flawless facet cut diamonds",
+                "platinum_encrusted_with_flawless_black_sapphires": "platinum encrusted with flawless black sapphires",
+                "platinum_encrusted_with_flawless_blue_diamonds": "platinum encrusted with flawless blue diamonds",
+                "wrought_brass": "wrought brass",
+                "wrought_bronze": "wrought bronze",
+                "wrought_copper": "wrought copper",
+                "wrought_gold": "wrought gold",
+                "wrought_orichalcum": "wrought orichalcum",
+                "wrought_platinum": "wrought platinum",
+                "wrought_silver": "wrought silver",
+                
+
+                "TYPES": {
+                    "trinkets": "trinkets",
+                    "jewelry": "jewelry",
+                    "regalia": "regalia"
+                }
+            },
+            "merchandise": {
+                "monster_parts": "monster parts",
+                "wood_rare": "wood (rare)",
+                "furs_rare": "furs (rare)",
+                "metals_precious": "metals (precious)",
+                "ivory": "ivory",
+                "spices": "spices",
+                "porcelain_fine": "porcelain (fine)",
+                "books_rare": "books (rare)",
+                "silk": "silk",
+                "semiprecious_stones": "semiprecious stones",
+                "gems": "gems",
+                "grain_vegetables": "grain (vegetables)",
+                "fish_preserved": "fish (preserved)",
+                "wood_common": "wood (common)",
+                "animals": "animals",
+                "salt": "salt",
+                "beer_ale": "beer (ale)",
+                "oil_lamp": "oil (lamp)",
+                "textiles": "textiles",
+                "hides_furs": "hides (furs)",
+                "tea": "tea",
+                "coffee": "coffee",
+                "metals_common": "metals (common)",
+                "meats_preserved": "meats (preserved)",
+                "cloth": "cloth",
+                "wine_spirits": "wine (spirits)",
+                "pottery": "pottery",
+                "tools": "tools",
+                "armor": "armor",
+                "weapons": "weapons",
+                "dye_pigments": "dye and pigments",
+                "glassware": "glassware",
+                "mounts": "mounts",
+                "fodder": "fodder",
+                
+                "UNITS": {
+                    "bag": "bag",
+                    "barrel": "barrel",
+                    "cord": "cord",
+                    "brick": "brick",
+                    "jar": "jar",
+                    "bundle": "bundle",
+                    "ingot": "ingot",
+                    "roll": "roll",
+                    "crate": "crate",
+                    "box": "box",
+                    "tusk": "tusk"
+                }
+            },
             "arbalest": {
                 "name": "arbalest",
                 "description": "An arbalest is a heavy crossbow, pulled with mechanical assistance of a rack and pinion or windlass."
@@ -133,6 +357,11 @@
                 "type": {
                     "tallow": "candle (tallow)",
                     "wax": "candle (wax)"
+                },
+                
+                "TYPES": {
+                    "tallow": "tallow",
+                    "wax": "wax"
                 }
             },
             "chest": {
@@ -421,6 +650,44 @@
                     "name": "Rally",
                     "description": "The unit rallies under the pressure of battle. If the unit is disordered, the disordered token is removed. If the unit is not disordered, it recovers one lost uhp and, if unthreatened, may advance one hex towards an enemy unit. Its battle rating (BR) is increased by half when attacking, next battle turn"
                 }
+            },
+            "domain": {
+                "rebellious": {
+                    "name": "Rebellious",
+                    "description": "The domain is revolting against their ruler. There is no population growth, and an extra 4d10 families per thousand are lost to illness, casualties, and emigration each month. Tax, land, and service income drop to zero. The ablebodied men (one per peasant family) become bandits, and begin to attack officials, trade caravans, troops, and travelers in the domain. If these bandits are slain, the population of the domain is reduced accordingly. For every 200 peasant families in the domain, there is a cumulative 10% chance of a village hero (4th - 7th level fighter) emerging to challenge the character's rule."
+                },
+                "defiant": {
+                    "name": "Defiant",
+                    "description": "The domain's inhabitants have become violently unhappy with their ruler. This unhappiness manifests in banditry, tax evasion, and disloyalty. An extra 3d10 families per thousand are lost to illness, casualties, and emigration each month. Tax, land and service income is reduced to half. One able-bodied man per two peasant families becomes a bandit, and begin to attack officials, trade caravans, troops, and travelers in the domain. If these bandits are slain, the population of the domain is reduced accordingly. For every 200 peasant families in the domain, there is a cumulative 10% chance of a village hero (4th - 7th level fighter) emerging to challenge the character's rule."
+                },
+                "turbulent": {
+                    "name": "Turbulent",
+                    "description": "The domain is in a state of dissatisfaction and unrest. An extra 2d10 families per thousand are lost to illness, casualties, and emigration each month. Tax, land, and service income is reduced by one quarter (rounded down). One able-bodied man per five peasant families becomes as a bandit, and begin to attack officials, trade caravans, troops, and travelers in the domain. If these bandits are slain, the population of the domain is reduced accordingly. For every 200 peasant families in the domain, there is a cumulative 10% chance of a village hero (4th - 7th level fighter) emerging to challenge the character's rule."
+                },
+                "demoralized": {
+                    "name": "Demoralized",
+                    "description": "The domain's populace sees their ruler as worse than average. An extra 1d10 families per thousand are lost to illness, casualties, and immigration each month."
+                },
+                "apathetic": {
+                    "name": "Apathetic",
+                    "description": "The domain's populace sees their ruler as just another petty noble. They work the land, pay their taxes, and do their duty, but have no special love for their ruler."
+                },
+                "loyal": {
+                    "name": "Loyal",
+                    "description": "The domain's ruler is respected and popular with his subjects. Spies and thieves operating against the domain suffer a -1 penalty to their proficiency throws. The population grows by an extra 1d10 families per thousand each month."
+                },
+                "dedicated": {
+                    "name": "Dedicated",
+                    "description": "The domain's populace has been inspired to strong nationalist sentiment by their ruler. Spies and thieves operating against the domain suffer a -2 penalty to their proficiency throws. The population grows by an extra 2d10 families per thousand each month."
+                },
+                "steadfast": {
+                    "name": "Steadfast",
+                    "description": "The domain's inhabitants hail their ruler as great leader deserving of strident support. The population grows by an extra 3d10 families per thousand each month. Spies and thieves operating against the domain suffer a -3 penalty to their proficiency throws. Service income is increased by 1gp per peasant family."
+                },
+                "stalwart": {
+                    "name": "Stalwart",
+                    "description": "The domain's populace acclaims their ruler as a beloved and righteous sovereign. The population grows by an extra 4d10 families per thousand each month. Spies and thieves operating against the domain suffer a -4 penalty to their proficiency throws. Land and service income are increased by 1gp per peasant family each."
+                }
             }
         },
         "reaction": {
@@ -498,7 +765,32 @@
             "heavy_cavalry": "Heavy Cavalry",
             "cataphract_cavalry" : "Cataphract Cavalry",
             "wolf_rider": "Wolf Rider"
-        },        
+        }, 
+        "realm_types": {
+            "empire": "Empire",
+            "kingdom": "Kingdom",
+            "principality": "Principality",
+            "duchy": "Duchy",
+            "county": "County",
+            "march": "March",
+            "barony": "Barony"
+        },
+        "stronghold":{
+            "hideout": "Hideout",
+            "hall": "Hall",
+            "temple": "Temple",
+            "fortified_church": "Fortified Church",
+            "vault": "Vault",
+            "fastness": "Fastness",
+            "border_fort": "Border Fort",
+            "castle": "Castle",
+            "sanctum": "Sanctum"
+        },  
+        "sinkhole_of_evil": {
+            "shadowed": "Shadowed Sinkhole of Evil",
+            "blighted": "Blighted Sinkhole of Evil",
+            "forsaken": "Forsaken Sinkhole of Evil"
+        }, 
         "strategic_situations": {
             "pitched_battle": {
                 "name": "Pitched Battle",
@@ -536,7 +828,32 @@
         "specialist_types": {
 
         }, 
-         
+        "urban_settlement": {
+            "hamlet": "hamlet",
+            "small_village": "small village",
+            "village": "village",
+            "large_village": "large village",
+            "small_town": "small town",
+            "large_town": "large town",
+            "small_city": "small city",
+            "city": "city",
+            "large_city": "large city",
+            "metropolis": "metropolis"
+        },
+        "monster_index": {
+
+        },
+        "spell_index": {
+            "animate_dead": {
+                "name": "Animate Dead",
+                "description": "This spell turns the bones or bodies of dead creatures into undead skeletons or zombies that follow the caster's spoken commands. The caster may animate a number of Hit Dice of undead equal to twice his caster level each time he casts this spell. Animated skeletons have Hit Dice equal to the number the monster had in life; for skeletons of humans or demi-humans, this means one Hit Die, regardless of the character level of the deceased. Zombies have one more Hit Die than the monster had in life. An animated skeleton can be created only from a mostly intact skeleton; a zombie can be created only from a mostly intact corpse. The caster must touch the remains to be animated. Animate dead normally lasts for just one day, but the spellcaster can make the spell permanent by sprinkling 1 vial of unholy water per Hit Die on each zombie or skeleton. If this is done, the undead remain animated until they are destroyed or dispelled."
+            },
+            "antimagic_shell": {
+
+            }
+        },
+
+
         "Settings" : {
             "Heroic_Breakfast_Memorial_Rule.Name" : "HFH: Heroic Breakfast Memorial Rule",
             "Heroic_Breakfast_Memorial_Rule.Hint" : "Once per day a character can recover his BHR in hp by consuming a meal accompanies by alcohol, coffee, or tea. This recovery is in addition to any hit points gained from complete rest. Halfing characters may consume a second breakfast for an additional recovery of hp.",

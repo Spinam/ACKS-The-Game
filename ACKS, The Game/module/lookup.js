@@ -233,10 +233,37 @@ function attackThrowPerMonsterHitDice(roll_term){
 }
 
 /**
- * 
+ * Returns the roll term for the provided gem type
+ * @see {SRD} ACKS Core Rulebook, pg. 207
+ * @param {string} gem_type 
+ * @returns {string | Error} roll-term
+ */
+function rollPerGemType(gem_type){
+    let result = Error(game.i18n.localize("ACKS.Errors.Unrecognized_Input"));
+    
+    switch (gem_type){
+        case game.i18n.localize("ACKS.items.gem.TYPES.ornamental"):
+            result = "2d20";
+            break;
+        case game.i18n.localize("ACKS.items.gem.TYPES.gem"):
+            result = "1d100";
+            break;
+        case game.i18n.localize("ACKS.items.gem.TYPES.brilliant"):
+            result = "1d100 + 80";
+            break;
+
+        default:
+            break;
+    }
+    return result;
+}
+
+
+/**
+ * Returns the number of an item available for purchase depending on the market class of the settlement in which you are attempting to make the purchase
  * @param {string} market_class 
  * @param {number} price_in_gp 
- * @returns {number}
+ * @returns {number | Error}
  */
 function equipmentAvailabilityByMarketClass(market_class, price_in_gp){
     let result = Error(game.i18n.localize("ACKS.Errors.Unrecognized_Input"));
@@ -356,10 +383,10 @@ function equipmentAvailabilityByMarketClass(market_class, price_in_gp){
 /* -------------------------------------------- */
 //#region
 /**
- * 
+ * Determines the size category of the creature based on its weight and height
  * @param {number} weight_in_pounds 
  * @param {number} height_in_inches 
- * @returns {string}
+ * @returns {string} 
  */
 function sizeCategoryByWeightAndHeight(weight_in_pounds, height_in_inches){
     const SIZE_CATEGORY = {
@@ -694,6 +721,9 @@ function baseHealingRatePerMaxHP(max_hp) {
     return result;
 }
 //#endregion
+
+/* -------------------------------------------- */
+
 export const lookup = {
     Core: {
         abilityScoreModifier,
